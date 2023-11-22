@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carouselContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.bacKImgCarousel{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    animation: backImgAppeared 850ms linear forwards;
+    
+    filter: opacity(55%);
+}
+
+@keyframes backImgAppeared {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.75;
+    }
+}
+
+.carouselItem {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    min-width: 250px;
+    height: 350px;
+    margin: 0 20px;
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.carouselItem.active{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.carouselItem:hover{
+    transition-duration: 300ms;
+}
+
+.textContent {
+    z-index: 1;
+    width: 40%;
+    color: white;
+    padding: 0 60px;
+}
+.textContent .title{
+    font-size: 5em;
+}
+
+.textContent .description{
+    font-size: 2em;
+    margin: 40px 0;
+}
+
+.cardsContent {
+    width: 60%;
+    height: 350px;
+    display: flex;
+    overflow-x: clip;
+}
+
+#btnWatch{
+    display: block;
+    text-align: center;
+    width: 50%;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 35px;
+    color: white;
+}
