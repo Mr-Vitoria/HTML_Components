@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    transition-duration: 350ms;
+}
+
+.slider{
+    margin: 50px auto;
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+}
+
+.slider-item{
+    flex: 1;
+    background-image: url('https://sun9-26.userapi.com/impg/QSbHb6Ds1hXiBPiC9SGCygVA2VjEJuTkXfkWLA/sENzfsF9uO8.jpg?size=960x1280&quality=95&sign=205a8dd14d165176ba583a17bf3f1cea&type=album');
+    background-position-x: center;
+    background-size: cover;
+    animation: sliderActive linear 10s forwards infinite;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.slider-item:nth-child(1){
+    background-image: url('https://sun9-20.userapi.com/impg/zmBXvl89srutfCeru-V5IuDCWSvrIARjgOcDpQ/oz3XRA_T3IY.jpg?size=1601x2160&quality=95&sign=d29c0da6a55531da7a2ece7c88e80183&type=album');
+}
+.slider-item:nth-child(2){
+    background-image: url('https://sun9-34.userapi.com/impg/XpwbPAEVXY2kwNZXUh_-QTdH9RZMXFwLlBmU7A/k3KEZAXgeyo.jpg?size=583x807&quality=95&sign=5c8ed6ad2994f92dce5e02a9d0ab84bd&c_uniq_tag=yWDM_BWy9b2qy3DQ59ynAwT680y7btyskufn-L0Mbn8&type=album');
+    animation-delay: 2s;
+}
+.slider-item:nth-child(3){
+    animation-delay: 4s;
+}
+.slider-item:nth-child(4){
+    animation-delay: 6s;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1019448005549954772/CADAB8F7E8D590842FDF37E9DA62076070336430/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+}
+.slider-item:nth-child(5){
+    animation-delay: 8s;
+    background-image: url('https://sun9-49.userapi.com/impf/c639524/v639524371/4523c/QbAWp35ZU-8.jpg?size=810x1080&quality=96&sign=26a37fef58aade4a39669bb65372794c&type=album');
+
+}
+@keyframes sliderActive {
+    4%{
+        flex: 4;
+    }
+    15%{
+        flex: 4;
+    }
+    18%{
+
+        flex: 1;
+    }
+    
+}
