@@ -1,0 +1,165 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    background-color: rgb(5, 5, 5);
+    color: #efefef;
+}
+
+.animeCard *{
+    margin: 0;
+    padding: 0;
+    transition-duration: 500ms;
+}
+.animeCard{
+    transition-duration: 500ms;
+    background-image: url('https://shikimori.one/system/animes/original/269.jpg?1690859382');
+    background-size: 130%;
+    background-clip: content-box;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgb(46, 46, 46);
+
+    width: 280px;
+    height: 400px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: end;
+    perspective: 800px;
+
+    margin: 40px;
+}
+
+.animeCard:hover{
+    transform: rotateX(-5deg) rotateY(20deg) rotateZ(-1deg);
+	transform-origin: 50% 50% 0px;
+    background-size: 110%;
+}
+
+
+.animeCard .textContent{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.animeCard .textContent .title{
+    max-height: 35%;
+    overflow: hidden;
+    font-size: 1.7em;
+}
+.animeCard .textContent *:hover{
+    transform-origin: 50% 50% 0px;
+    transform: perspective(800px) translate(5px);    
+}
+
+.animeCard .textContent .description{
+    max-height: 35%;
+    overflow: hidden;
+}
+
+.animeCard .textContent a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#animeList{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#formGetAnimes{
+    margin: auto;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+#formGetAnimes label{
+    font-size: 1.5em;
+}
+
+#formGetAnimes input{
+    border: none;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 1.3em;
+    border-radius: 15px;
+    padding: 10px;
+}
+#formGetAnimes button{
+    width: 60%;
+    border: none;
+    padding: 10px 0;
+    font-size: 1.4em;
+    border-radius: 20px;
+}
+
+
+
+/* Blink Text */
+
+.blinkText{
+    font-size: 4em;
+    text-align: center;
+    color: #fee;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.blinkText span{
+    animation: blinkAnimation linear infinite 2s;
+}
+.blinkText span:nth-child(2){
+    animation: blinkAnimation linear infinite 6s;
+}
+.blinkText span:nth-child(3){
+    animation: blinkAnimation linear infinite 3.5s;
+}
+.blinkText span:nth-child(4){
+    animation: blinkAnimation linear infinite 10s;
+}
+
+@keyframes blinkAnimation {
+    68%{
+        color: inherit;
+        text-shadow: inherit;
+    }
+    75%{
+        color: transparent;
+    }
+    80%{
+        text-shadow: none;
+    }
+    81%{
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82%{
+        color: transparent;
+        text-shadow: none;
+    }
+    83%{
+        color: inherit;
+        text-shadow: inherit;
+    }
+    93%{
+        color: transparent;
+        text-shadow: none;
+    }
+}

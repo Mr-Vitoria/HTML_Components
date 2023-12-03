@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Практическая работа №1</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-size: 3em;">Поиск Аниме</h1>
+    <p style="text-align: center; font-size: 1.5em;">API предоставлен сервисом</p>
+    <p style="text-align: center; font-size: 1.8em; margin-bottom: 150px;" class="blinkText">
+        <span>O</span>uT<span>ou</span>ch <span>A</span>ni<span>me</span></p>
+    <form id="formGetAnimes" method="get">
+        <label>Введите название</label>
+        <input type="text" id="titleAnime" />
+        <button type="submit">Найти аниме</button>
+    </form>
+
+    <div id="animeList">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
