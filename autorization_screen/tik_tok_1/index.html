@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+<body>
+    <section class="section" id="mainSection">
+        <div class="formContainer signUp">
+            <h3>Вход</h3>
+            <div class="socialLinks">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-vk"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <form onSubmit="">
+                <div class="placeholderContainer">
+                    <input
+                        type="text"
+                        placeholder=" "
+                        required
+                        autoComplete="email"
+                    />
+                    <label>Email</label>
+                </div>
+                <div class="placeholderContainer">
+                    <input
+                        type="password"
+                        placeholder=" "
+                        required
+                        autoComplete="current-password"
+                    />
+                    <label>Пароль</label>
+                    </div>
+                    <div class="userMessage">
+                        <p>Для ошибок</p>
+                    </div>
+                <button class="btnDark" type="submit">Войти</button>
+                <button id="mobileSignIn" class="mobileChangeBtn" onClick="">Нет нашего аккаунта? <span style="text-decoration: 'underline';">Зарегестрироваться</span></button>
+            </form>
+        </div>
+        <div class="formContainer signIn">
+            <h3>Регистрация</h3>
+            <div class="socialLinks">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-vk"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <form onSubmit="">
+                <div class="placeholderContainer">
+                    <input
+                        type="text"
+                        placeholder=" "
+                        required
+                        autoComplete="username"
+                    />
+                    <label>Логин</label>
+                </div>
+                <div class="placeholderContainer">
+                    <input
+                        type="text"
+                        placeholder=" "
+                        required
+                        autoComplete="email"
+                    />
+                    <label>Email</label>
+                </div>
+                <div class="placeholderContainer">
+                    <input
+                        type="password"
+                        placeholder=" "
+                        required
+                        autoComplete="new-password"
+                        minLength="6"
+                        maxLength="20"
+                    />
+                    <label>Пароль</label>
+                    </div>
+    
+                    <div class="userMessage">
+                        <p>Для ошибок</p>
+                    </div>
+                <button class="btnDark" type="submit">Зарегестрироваться</button>
+                <button id="mobileSignUp" class="mobileChangeBtn">Есть аккаунт? <span style="text-decoration:'underline';" >Войти</span></button>
+            </form>
+        </div>
+    
+    
+        <div class="textContainer">
+            <div class="textPanel">
+                <p class="hello">С возвращением</p>
+                <p class="description">Войдите, чтобы увидеть ваши проекты</p>
+                <button id="btnSignIn">Войти</button>
+            </div>
+            <div class="textPanel">
+                <p class="hello">Добро пожаловать на наш сервис</p>
+                <p class="description">Зарегестрируйтесь, чтобы использовать наш сервис</p>
+    
+                    <button id="btnSignUp">Зарегестрироваться</button>
+            </div>
+        </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
