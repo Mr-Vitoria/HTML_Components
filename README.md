@@ -6,3 +6,5 @@
 ### <a href="./cards/">2. Cards</a>
 ### <a href="./autorization_screen/">3. Autorization Screens</a>
 ### <a href="./headers/">4. Headers</a>
+### <a href="./tips/">5. Tips</a>
+### <a href="./design/">6. Примеры дизайнов</a>
