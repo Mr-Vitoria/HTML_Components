@@ -8,3 +8,4 @@
 ### <a href="./headers/">4. Headers</a>
 ### <a href="./tips/">5. Tips</a>
 ### <a href="./design/">6. Примеры дизайнов</a>
+### <a href="./social/">7. Кнопки соц. сетей</a>
